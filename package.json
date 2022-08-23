@@ -1,0 +1,19 @@
+{
+  "name": "challenge-html-css-js-101",
+  "version": "1.0.0",
+  "description": "challenge angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.enigmacamp.com/enigma-camp/pascal-batch-9/aisyah-nurul-hamidah/angular-fe/challenge/challenge-html-css-js-101.git"
+  },
+  "author": "Aisyah N Hamidah",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

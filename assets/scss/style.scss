@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$soft-orange: #ffd39a;
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+$body-color: $gray-800;
+$body-bg: $soft-orange;
+$card-bg: $orange;
+$card-border-width: 1px;
+$card-border-color: $yellow;
+
+body {
+  margin: 0; // 1
+   font-family: "Patrick Hand", cursive;
+  color: $body-color;
+  text-align: left; // 3
+  background-color: $body-bg; // 2
+}
+h1, .content h2 {
+  font-size: 5rem;
+  font-family: 'Times New Roman';
+}
+h2 {
+  font-size: 3rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.content h2 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  position: relative;
+  padding: 15px 0;
+}
+header {
+  background-color: $orange; //$enigma-primary-color;
+  color: black;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+.navbar-logo {
+  font-size: 3rem;
+  margin-left: 20px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 50px;
+  position: relative;
+  font-size: large;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+// CSS Pseudo-classes
+nav ul li a:hover {
+  color: yellow;
+}
+
+nav ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+.wrapper {
+  margin-top: 0;
+  width: 100%;
+  height: 80vh;
+  box-shadow: 0, 4px, 8px, 0 rgba(42, 42, 208, 0.2);
+  background-image: url(https://biruindonesia.com/images/XXI.jpg);
+  background-size: cover;
+  background-position: center;
+}
+//mambuat tulisan berada di tengah"
+.content {
+  width: 100%;
+  color: $indigo;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+}
+
+// .container {
+//   width: 100%;
+//   // padding-right: 15px;
+//   // padding-left: 15px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+// .row {
+//   display: -ms-flexbox;
+//   display: flex;
+//   -ms-flex-wrap: wrap;
+//   flex-wrap: wrap;
+//   margin-right: -15px;
+//   margin-left: -15px;
+// }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  word-wrap: break-word;
+  background-color: $card-bg;
+  background-clip: border-box;
+  border: $card-border-width solid $card-border-color;
+}
+.center {
+  text-align: center;
+}
+.card img {
+  // height: 300px;
+  // width: 400px;
+  display: inline-block;
+  margin: 0 50px;
+  margin-top: 10px;
+  // max-width: 50%;
+  // max-height: 300px;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 2px 16px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  position: relative;
+  width: 100%;
+  // padding-right: 1px;
+  // padding-left: 1px;
+  // margin-bottom: 35px;
+}
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.col-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.col-5 {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.logo-desc img {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  //  text-align: center;
+}
+.logo-desc p {
+  align-items: center;
+  text-align: justify;
+  padding-top: 0;
+  margin-top:  auto;
+  margin-left: 100px;
+  color: red;
+
+  //  text-align: center;
+}
+
+.title-center h2{
+  text-align: center;
+  margin-top: 100px;
+  
+}
+
+hr {
+  border-color: $orange;
+  height: 2px;
+  width: 25%;
+}
+
+
+footer{
+  background-color: $green;
+  width: 100%;
+  text-align: center;
+  color: $soft-orange;
+  bottom: 0;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  margin-top: 50px;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
