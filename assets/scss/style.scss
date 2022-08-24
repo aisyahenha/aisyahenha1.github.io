@@ -40,14 +40,15 @@ $card-border-color: $yellow;
 
 body {
   margin: 0; // 1
-   font-family: "Patrick Hand", cursive;
+  font-family: "Patrick Hand", cursive;
   color: $body-color;
   text-align: left; // 3
   background-color: $body-bg; // 2
 }
-h1, .content h2 {
+h1,
+.content h2 {
   font-size: 5rem;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
 }
 h2 {
   font-size: 3rem;
@@ -190,6 +191,8 @@ nav ul li:hover::after {
   flex: 1 1 auto;
   padding: 2px 16px;
 }
+mai .side-left {
+}
 
 .col-1,
 .col-2,
@@ -240,17 +243,16 @@ nav ul li:hover::after {
   align-items: center;
   text-align: justify;
   padding-top: 0;
-  margin-top:  auto;
+  margin-top: auto;
   margin-left: 100px;
   color: red;
 
   //  text-align: center;
 }
 
-.title-center h2{
+.title-center h2 {
   text-align: center;
   margin-top: 100px;
-  
 }
 
 hr {
@@ -259,8 +261,7 @@ hr {
   width: 25%;
 }
 
-
-footer{
+footer {
   background-color: $green;
   width: 100%;
   text-align: center;
@@ -270,8 +271,40 @@ footer{
   padding-top: 5px;
   margin-top: 50px;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: white;
 }
 
+.wrap {
+  background:$gray-100;
+  width: 900px;
+  margin: 10px auto;
+}
+
+.main {
+  height: 450px;
+}
+/*bagian sidebar*/
+.wrap .main .sidebar {
+  background: orange;
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+/*akhir sidebar*/
+
+.wrap .footer {
+  width: 100%;
+  padding: 10px;
+}
+.references{
+  list-style-type :none;
+}
+.text-left {
+  text-align: left;
+  margin-left: 300px;
+  // padding-left: 30px;
+
+}
