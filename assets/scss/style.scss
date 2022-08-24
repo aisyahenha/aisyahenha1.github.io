@@ -17,6 +17,8 @@ $indigo: #6610f2;
 $purple: #6f42c1;
 $pink: #e83e8c;
 $red: #dc3545;
+$dark-red: #a62349;
+$red-orange: #ff9551;
 $orange: #fd7e14;
 $yellow: #ffc107;
 $green: #28a745;
@@ -34,7 +36,7 @@ $light: $gray-100;
 $dark: $gray-800;
 $body-color: $gray-800;
 $body-bg: $soft-orange;
-$card-bg: $orange;
+$card-bg: $gray-300;
 $card-border-width: 1px;
 $card-border-color: $yellow;
 
@@ -48,7 +50,7 @@ body {
 h1,
 .content h2 {
   font-size: 5rem;
-  font-family: "Times New Roman";
+  font-family: "Ubuntu", sans-serif;
 }
 h2 {
   font-size: 3rem;
@@ -66,6 +68,25 @@ h6 {
   font-size: 3rem;
   margin-top: 0;
 }
+.scroll-up-btn {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: crimson;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
 
 nav {
   display: flex;
@@ -77,8 +98,7 @@ nav {
   padding: 15px 0;
 }
 header {
-  background-color: $orange; //$enigma-primary-color;
-  color: black;
+  background-color: $orange;
   padding: 0;
   margin: auto;
   display: flex;
@@ -95,7 +115,8 @@ nav ul li {
   display: inline-block;
   margin: 0 50px;
   position: relative;
-  font-size: large;
+  font-size: 2rem;
+  padding-right: 100px;
 }
 
 nav ul li a {
@@ -106,14 +127,14 @@ nav ul li a {
 
 // CSS Pseudo-classes
 nav ul li a:hover {
-  color: yellow;
+  color: $yellow;
 }
 
 nav ul li::after {
   content: "";
   height: 3px;
   width: 0;
-  background: yellow;
+  background: $yellow;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -122,41 +143,42 @@ nav ul li::after {
 nav ul li:hover::after {
   width: 100%;
 }
-.wrapper {
-  margin-top: 0;
-  width: 100%;
-  height: 80vh;
-  box-shadow: 0, 4px, 8px, 0 rgba(42, 42, 208, 0.2);
-  background-image: url(https://biruindonesia.com/images/XXI.jpg);
-  background-size: cover;
-  background-position: center;
-}
 //mambuat tulisan berada di tengah"
 .content {
   width: 100%;
-  color: $indigo;
+  color: $dark-red;
   align-items: center;
   text-align: center;
   position: absolute;
   top: 40%;
 }
+.content a {
+  text-decoration: none;
+  display: inline-block;
+  background: $red;
+  color: $white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+.content a:hover {
+  color: $orange;
+  background: $white;
+}
 
-// .container {
-//   width: 100%;
-//   // padding-right: 15px;
-//   // padding-left: 15px;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
-
-// .row {
-//   display: -ms-flexbox;
-//   display: flex;
-//   -ms-flex-wrap: wrap;
-//   flex-wrap: wrap;
-//   margin-right: -15px;
-//   margin-left: -15px;
-// }
+.wrapper {
+  display: flex;
+  background: url(https://biruindonesia.com/images/XXI.jpg) no-repeat center;
+  height: 100vh;
+  color: $white;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed; //buat bg nya bagus
+}
 
 .row {
   display: flex;
@@ -177,21 +199,6 @@ nav ul li:hover::after {
 }
 .center {
   text-align: center;
-}
-.card img {
-  // height: 300px;
-  // width: 400px;
-  display: inline-block;
-  margin: 0 50px;
-  margin-top: 10px;
-  // max-width: 50%;
-  // max-height: 300px;
-}
-.card-body {
-  flex: 1 1 auto;
-  padding: 2px 16px;
-}
-mai .side-left {
 }
 
 .col-1,
@@ -245,14 +252,9 @@ mai .side-left {
   padding-top: 0;
   margin-top: auto;
   margin-left: 100px;
-  color: red;
+  color: $red;
 
   //  text-align: center;
-}
-
-.title-center h2 {
-  text-align: center;
-  margin-top: 100px;
 }
 
 hr {
@@ -277,7 +279,7 @@ footer a {
 }
 
 .wrap {
-  background:$gray-100;
+  background: $gray-100;
   width: 900px;
   margin: 10px auto;
 }
@@ -295,16 +297,229 @@ footer a {
 
 /*akhir sidebar*/
 
-.wrap .footer {
+.wrap .main {
   width: 100%;
   padding: 10px;
+  height: 1100px;
 }
-.references{
-  list-style-type :none;
+.wrap .main .right-side {
+  margin: auto;
+  float: right;
+  width: 75%;
+}
+.main .right-side .year {
+  float: right;
+  margin-right: 5%;
+  display: inline-block;
+  color: $orange;
+}
+
+.main .right-side hr {
+  margin-top: 60px;
+  border-style: solid;
+  border-color: $gray-500;
+  width: 50%;
+}
+circle {
+  height: 10px;
+  width: 10px;
+  margin-top: 1%;
+  margin-right: 5%;
+  border-radius: 50%;
+  background-color: $red-orange;
+  float: right;
+  display: inline-block;
+}
+.verticalLine {
+  margin-left: 3px;
+  border-left: 2px solid $red-orange;
+  height: 5000%;
+}
+
+.references {
+  list-style-type: none;
 }
 .text-left {
   text-align: left;
-  margin-left: 300px;
+  margin-left: 30px;
   // padding-left: 30px;
+}
 
+/*/
+
+/*section styling */
+.center-title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 60px;
+  padding-bottom: 20px;
+}
+
+.about-content .left {
+  width: 40%;
+  float: left;
+}
+.about-content .left img {
+  margin-top: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.about-content .right {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  width: 55%;
+  float: right;
+}
+.about-content .right .text {
+  margin-top: 0px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.about-content .right p {
+  text-align: justify;
+}
+.about-content {
+  display: inline-block;
+}
+.max-width {
+  // display: inline;
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/*end about*/
+/* teams section styling */
+.teams .title::after {
+  content: "who with me";
+}
+.teams .carousel .card {
+  background: $gray-500;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover {
+  background: $orange;
+}
+.teams .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.teams .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.teams .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border: 5px solid $pink;
+  transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img {
+  border-color: #fff;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid $orange !important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: $orange !important;
+}
+
+/* contact section styling */
+
+.contact .contact-content .column {
+  //width: calc(50% - 30px);
+}
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area {
+  display: flex;
+  align-items: center;
+}
+.right form .button-area button {
+  margin-left: 83%;
+
+  color: $white;
+  display: block;
+  width: 160px !important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  // flex-wrap: nowrap;
+  background: $primary;
+  border: 2px solid $white;
+  transition: all 0.3s ease;
+}
+.right form .button-area button:hover {
+  color: $secondary;
+  background: $soft-orange;
 }
