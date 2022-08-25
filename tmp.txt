@@ -1,0 +1,113 @@
+<div class="title-center">
+      <h2 id="about">About Us</h2>
+      <hr />
+    </div>
+    <!-- end tittle -->
+    <!-- about us -->
+    <section class="logo-desc">
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="https://git.enigmacamp.com/uploads/-/system/appearance/logo/1/enigmacamp-logo.png"
+            alt="Logo Enigma"
+          />
+        </div>
+        <div class="col-6">
+          <p>
+            Didirikan pada tahun 2017, ENIGMA CAMP pada awalnya merupakan salah
+            satu anak perusahaan PT. Square Techno Indonesia (STI) sampai di
+            tahun 2019 berkembang menjadi sebuah perusahaan baru, PT. Enigma
+            Cipta Humanika. Enigma Camp bergerak dalam bidang IT Bootcamp dan
+            pengelolaan talent IT. Kami telah berkecimpung dalam bidang
+            informasi teknologi sejak tiga tahun terakhir dan daftar klien kami
+            mencakup perusahaan ternama. Kami bekerja berdasarkan pengalaman
+            dalam mengembangkan software engineer yang dapat mendukung bisnis
+            anda dengan 3 program utama, yaitu: Talent as a Service, Training as
+            a Service dan Experienced Hiring. ENIGMA CAMP menggunakan pendekatan
+            model Ready-to-Work yang dirancang secara khusus untuk memenuhi
+            kekurangan tenaga kerja IT. Kami menyiapkan sumberdaya yang terampil
+            untuk menduduki posisi sebagai junior developer dan SQA, baik yang
+            bekerja untuk sebuah perusahaan maupun sebagai karyawan outsourcing.
+            Program training intensif kami diberikan secara penuh, 6 hari dalam
+            seminggu, dengan durasi training antara 8 sampai 12 minggu. Dengan
+            berfokus pada kesiapan kerja dari program training intensif kami,
+            proses penerimaan cenderung sangat selektif dan selama periode
+            training, para peserta akan tinggal di rumah ENIGMA CAMP yang kami
+            sediakan secara gratis termasuk alat training, notebook, koneksi
+            internet, makanan 3 kali sehari dan tidak akan dikenakan biaya apa
+            pun.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- container list film-->
+    <section class="container center">
+      <div class="row">
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/07/11/2976491275.jpg"
+              alt="Film Minion"
+              srcset=""
+            />
+            halo2
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/06/tangled-715x375-1.jpg"
+              alt="Film Tangled"
+              srcset=""
+            />
+            halo3
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <img
+              src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/06/tangled-715x375-1.jpg"
+              alt="Film Tangled"
+              srcset=""
+            />
+            halo3
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end container list film-->
+
+
+
+    
+
+
+    
+    <!-- Contact Us -->
+
+
+    <ul>
+      <li>
+        <a href="http://www.enigmacamp.com" target="_blank" rel=""
+          >www.enigmacamp.com</a
+        >
+      </li>
+      <li><a href="mailto:info@enigmacamp.com">info@enigmacamp.com</a></li>
+      <li><a href="tel:+26266626">+26266626 </a></li>
+    </ul>
+  </section>
+  

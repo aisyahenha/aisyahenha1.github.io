@@ -5,36 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Wellcome</title>
-  </head>
-  <body>
-    
-  
-    <!-- Header -->
-    <header id="home">
-      <!-- Navbar -->
-      <div class="navbar-logo">Logo Web</div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
 
-      <nav>
+    <title>Pascal Class</title>
+  </head>
+  <body onload="loadData()" >
+    <!-- Header -->
+    <header class="home">
+      <!-- Navbar -->
+      <nav class="navbar">
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="#home"><i class="fa-solid fa-home"> </i>Home</a>
+          </li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#contact">Contact Us</a></li>
         </ul>
       </nav>
+      <div class="navbar-logo"><i class="fa-solid fa-code"></i></div>
+
       <!-- end Navabr -->
     </header>
     <!-- end Header -->
 
     <!-- Wrapper  -->
-    <div class="wrapper">
+    <div class="wrapper" id="home">
       <section class="content">
         <!-- Opening Content -->
 
-        <h1>Kupas Tuntas</h1>
-        <h2>Pascal Class</h2>
+        <h1>Now Showing</h1>
+        <h2>Pascal Class Documenter Film</h2>
         <a href="cv.html" target="_blank" rel="noopener noreferrer">
-           Developer
+          Developer
         </a>
 
         <!-- end Opening Content -->
@@ -86,51 +91,20 @@
 
     <!-- tittle now showing -->
     <div class="center-title">
-      <h2>Now Showing</h2>
+      <h2>Actors</h2>
       <hr />
     </div>
     <!-- end tittle -->
 
     <!-- teams section start -->
-    <section class="teams" id="teams">
-      <div class="max-width">
-        <div class="carousel owl-carousel">
-          <div class="card">
-            <div class="box">
-              <img
-                src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/06/tangled-715x375-1.jpg"
-                alt="Film Tangled"
-                srcset=""
-              />
-              <div class="text">Someone name</div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <img
-                src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/06/tangled-715x375-1.jpg"
-                alt="Film Tangled"
-                srcset=""
-              />
-              <div class="text">Someone name</div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="box">
-              <img
-                src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/06/tangled-715x375-1.jpg"
-                alt="Film Tangled"
-                srcset=""
-              />
-              <div class="text">Someone name</div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
+    <div class="slideshow-container">
+      <div class="pass-foto" id="tes">
+
       </div>
-    </section>
+      
+</div>
+    </div>
+
 
     <!-- tittle Contact Us -->
     <div class="center-title">
@@ -140,10 +114,9 @@
     <!-- end tittle -->
 
     <!-- contact section start -->
-    <section class="contact" id="contact">
+    <section class="contact" >
       <div class="max-width">
         <div class="contact-content">
-      
           <div class="column right">
             <form action="#">
               <div class="fields">
@@ -185,4 +158,5 @@
       </p>
     </footer>
   </body>
+  <script src="./assets/js/script.js"></script>
 </html>
